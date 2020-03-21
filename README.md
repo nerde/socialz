@@ -24,6 +24,8 @@ To start the project, simply call `rails s`. Then you can test it by calling `cu
 If you want to enable caching in development mode, you need to `touch tmp/caching-dev.txt`, `bin/spring stop`
 and restart your server. To disable caching `rm tmp/caching-dev.txt`, `bin/spring stop` and restart your server.
 
+To run the test suite, call `bundle exec rspec`.
+
 ## How it Works
 
 In order to provide an acceptable performance, we have a few classes that collaborate together through dependency
