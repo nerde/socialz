@@ -1,6 +1,6 @@
-# README
+# Socialz
 
-Socialz groups tweets, status updates and photos from https://takehome.io and present them in a JSON format.
+This app groups tweets, status updates and photos from https://takehome.io and present them in JSON format.
 
 ## Installation
 
