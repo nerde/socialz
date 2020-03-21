@@ -4,15 +4,15 @@ class TakeHome
   include HTTParty
   base_uri 'https://takehome.io'
 
-  def facebook
-    parse(self.class.get('/facebook'))
-  end
-
-  def twitter
+  def tweets
     parse(self.class.get('/twitter'))
   end
 
-  def instagram
+  def statuses
+    parse(self.class.get('/facebook'))
+  end
+
+  def photos
     parse(self.class.get('/instagram'))
   end
 
