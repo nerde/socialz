@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @take_home = TakeHome.new
+    @take_home = ConcurrentTakeHome.new(SafeTakeHome.new(CachedTakeHome.new(RetriableTakeHome.new)))
 
     @tweets = @take_home.tweets
     @statuses = @take_home.statuses
