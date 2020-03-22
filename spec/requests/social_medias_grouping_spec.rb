@@ -46,11 +46,6 @@ describe 'social medias grouping' do
   it 'returns empty arrays for unavailable services' do
     %w[/twitter /facebook /instagram].each do |path|
       stub_request(:get, take_home_url(path)). \
-        to_return(status: 500, body: 'I am trapped in a social media factory send help').then. \
-        to_return(status: 500, body: 'I am trapped in a social media factory send help').then. \
-        to_return(status: 500, body: 'I am trapped in a social media factory send help').then. \
-        to_return(status: 500, body: 'I am trapped in a social media factory send help').then. \
-        to_return(status: 500, body: 'I am trapped in a social media factory send help').then. \
         to_return(status: 500, body: 'I am trapped in a social media factory send help')
     end
 
